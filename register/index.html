@@ -16,7 +16,7 @@
     <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
     <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
     <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
     <!-- Vendor CSS-->
     <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
@@ -24,130 +24,79 @@
 
     <!-- Main CSS-->
     <link href="css/main.css" rel="stylesheet" media="all">
-    <style>
-        .center {
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .form-input {
-      background: #333;
-      width: 250px;
-      padding: 20px;
-      /* background: #fff; */
-      border: 2px dashed #555;
-    }
-
-    .form-input input[type="file"] {
-      display: none;
-    }
-
-    .form-input label {
-      display: block;
-      width: 100%;
-      height: 50px;
-      line-height: 50px;
-      text-align: center;
-      background: #fff;
-      color: #333;
-      font-size: 15px;
-      font-family: "Open Sans", sans-serif;
-      text-transform: uppercase;
-      font-weight: 600;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-
-    .form-input img {
-      width: 100%;
-      display: none;
-      ;
-    }
-    </style>
 </head>
 
 <body>
-    <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
-        <div class="wrapper wrapper--w680">
-            <div class="card card-4">
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+                    <h2 class="title">Professional Resgistration Form</h2>
+                </div>
                 <div class="card-body">
-                    <h2 class="title">Registration Form</h2>
                     <form method="POST">
-                        <div class="row row-space">
-                            <div class="col-2">
+                        <div class="form-row">
+                            <div class="name">Name</div>
+                            <div class="value">
                                 <div class="input-group">
-                                    <label class="label">first name</label>
-                                    <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">last name</label>
-                                    <input class="input--style-4" type="text" name="last_name">
+                                    <input class="input--style-5" type="text" name="name">
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-space">
-                            <div class="col-2">
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
                                 <div class="input-group">
-                                    <label class="label">Mobile Number</label>
-                                    <input class="input--style-4" type="text" name="first_name">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Whatsapp Number</label>
-                                    <input class="input--style-4" type="text" name="last_name">
-                                </div>
-                            </div>
-                           
-                        </div>
-                        <div class="row row-space">
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Email</label>
-                                    <input class="input--style-4" type="email" name="email">
-                                </div>
-                            </div>
-                            <div class="col-2">
-                                <div class="input-group">
-                                    <label class="label">Exp</label>
-                                    <input class="input--style-4" type="text" name="phone">
+                                    <input class="input--style-5" type="text" name="email">
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-space">
-                            <div class="center form-group col-md-6">
-                                <label for="Photo" class="col-md-6">Resume &nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                <div class="form-input ">
-                
-                                <label for="file-ip-1">Choose Resume</label>
-                                <input type="file" id="file-ip-1" name="file" accept="assets/*" onchange="showPreview(event);">
-                                <div class="preview">
-                                    <img id="file-ip-1-preview">
-                
-                                </div><br>
+                        <div class="form-row">
+                            <div class="name">Whatsapp</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="Whatsapp">
                                 </div>
                             </div>
                         </div>
-                        <div class="row row-space">
-                            <div class="center form-group col-md-6">
-                                <label for="Photo" class="col-md-6">Photo&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;</label><br>
-                                <div class="form-input ">
-                
-                                <label for="file-ip-1">Choose Image</label>
-                                <input type="file" id="file-ip-1" name="file" accept="assets/*" onchange="showPreview(event);">
-                                <div class="preview">
-                                    <img id="file-ip-1-preview">
-                
-                                </div><br>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                                    <div class="col-3">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="area_code">
+                                            <label class="label--desc">Area Code</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="p-t-15">
-                            <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button>
+                        <div class="form-row">
+                            <div class="name">Whatsapp</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input class="input--style-5" type="email" name="Whatsapp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Resume Video</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input type="file" name="fileToUpload" id="fileToUpload">
+                                    <!-- <input type="submit" value="Upload Image" name="submit"> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
                         </div>
                     </form>
                 </div>
@@ -164,16 +113,7 @@
 
     <!-- Main JS-->
     <script src="js/global.js"></script>
-    <script>
-        function showPreview(event) {
-          if (event.target.files.length > 0) {
-            var src = URL.createObjectURL(event.target.files[0]);
-            var preview = document.getElementById("file-ip-1-preview");
-            preview.src = src;
-            preview.style.display = "block";
-          }
-        }
-      </script>
+
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
 </html>
